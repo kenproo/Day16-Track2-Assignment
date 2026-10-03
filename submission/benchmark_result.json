@@ -1,0 +1,38 @@
+{
+    "dataset": {
+        "name": "Credit Card Fraud Detection",
+        "total_samples": 284807,
+        "num_features": 30,
+        "train_samples": 227845,
+        "test_samples": 56962,
+        "fraud_samples": 492,
+        "normal_samples": 284315
+    },
+    "model": {
+        "name": "LightGBM",
+        "type": "LGBMClassifier",
+        "n_estimators": 300,
+        "learning_rate": 0.05,
+        "num_leaves": 31
+    },
+    "metrics": {
+        "auc_roc": 0.8839168176415192,
+        "accuracy": 0.9987886661282961,
+        "f1_score": 0.6666666666666666,
+        "precision": 0.6330275229357798,
+        "recall": 0.7040816326530612
+    },
+    "performance": {
+        "training_time_seconds": 10.91061426199849,
+        "inference_latency_ms_per_sample": 1.2923151499853702,
+        "throughput_samples_per_second": 66432.3023654232,
+        "throughput_batch_size": 1000,
+        "batch_inference_time_ms": 15.052917999128113
+    },
+    "system": {
+        "python_version": "3.10.12",
+        "platform": "Linux-6.8.0-1066-aws-x86_64-with-glibc2.35",
+        "cpu_count": 2,
+        "lightgbm_version": "4.7.0"
+    }
+}
